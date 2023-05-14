@@ -1,0 +1,146 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 0.6fr 1fr 1fr 0.6fr;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+li {
+    list-style-type: none;
+    align-self: center;
+    font-weight: bolder;
+}
+
+.sidebar {
+    background-color: #9891f0;
+    color: white;
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+}
+
+ul {
+    display: grid;
+    grid-column: 1 / 2;
+    grid-template-rows: repeat(10, 25px);
+    gap: 25px;
+}
+
+input {
+    border-radius: 20px;
+    width: 550px;
+    height: 30px;
+    border: none;
+    background-color: rgb(215, 219, 223);
+}
+
+input:hover {
+    border: solid 3px  blue;
+    width: 600px;
+}
+
+.nav {
+    margin: 20px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-column: 2 / 5;
+    align-items: center;
+}
+
+.sidebar  h2 {
+    padding: 1.5rem;
+    margin-bottom: 25px;
+    font-weight: bold;
+    font-size: 1.3em;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+button {
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+    border: none;
+    background: rgb(105, 107, 255);
+    color: white;
+    font-weight: bold;
+}
+
+.menu  {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-column: 2 / 4;
+    background-color: #e7e7e7;
+    padding: 20px;
+}
+
+h2 {
+    font-weight: 700; 
+    font-size: 1.2rem;
+}
+
+.title {
+    font-weight: 600; 
+    font-size: 1rem;
+    text-align: center;
+
+}
+
+.other {
+    display: grid;
+    grid-column: 4 / 5;
+    background-color: #e7e7e7;;
+    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 0.8fr));
+}
+
+.card {
+    background-color: white;
+    border-radius: 5px;
+    height: 200px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.ftr {
+    background-color: white;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+}
+
+p {
+    font-size: small;
+}
+
+.projects {
+    display: grid;
+    grid-column: 2 / 5;
+    grid-template-columns: 1fr 1fr;
+    background-color: #e7e7e7;
+  }
+
+  .title .card {
+    text-align: center;
+  }
+  
+  .align {
+    display: flex;
+    align-self: start;
+  }
+  
