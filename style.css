@@ -39,7 +39,6 @@ ul {
 
 input {
     border-radius: 20px;
-    width: 550px;
     height: 30px;
     border: none;
     background-color: rgb(215, 219, 223);
@@ -47,15 +46,17 @@ input {
 
 input:hover {
     border: solid 3px  blue;
-    width: 600px;
 }
 
 .nav {
-    margin: 20px;
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-column: 2 / 5;
     align-items: center;
+    gap: 50px;
+    box-shadow: 2px 4px 13px 5px lightgrey;
+    position: relative;
+    padding: 20px;
 }
 
 .sidebar  h2 {
@@ -76,7 +77,7 @@ button {
     width: 100px;
     height: 40px;
     border: none;
-    background: rgb(105, 107, 255);
+    background: rgb(176, 177, 219);
     color: white;
     font-weight: bold;
 }
@@ -115,6 +116,7 @@ h2 {
     height: 200px;
     margin: 20px;
     padding: 10px;
+    box-shadow: 2px 4px 13px 5px lightgrey;
 }
 
 .ftr {
@@ -122,6 +124,7 @@ h2 {
     border-radius: 5px;
     margin: 20px;
     padding: 20px;
+    box-shadow: 2px 4px 13px 5px lightgrey;
 }
 
 p {
@@ -139,8 +142,18 @@ p {
     text-align: center;
   }
   
-  .align {
-    display: flex;
-    align-self: start;
+  .first {
+    display: grid;
+    align-items: center;
+    grid-auto-flow: column;
   }
+
+  .second {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-flow: column;
+    align-items: center;
+    gap: 30px;
+  }
+  
   
